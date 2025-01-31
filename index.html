@@ -41,7 +41,28 @@ for i in range(5):
             <button class="close" onclick="closePopup('codePopup1')">Fermer</button>
         </div>
 
-
+        <div class="mainDiv">
+            <!--           A dupliquer pour ajouter une nouvelle section et modifier codePopup1 -> codePopup2           -->
+            <section class="codeSection">
+                <div class="sectionText">
+                    <p class="UpTitle">Python</p>
+                    <h2 class="titleSection">Calculatrice</h2>
+                    <h4 class="subTitleSection">C'est génial</h4>
+                    <p class="descriptionSection">aa</p>
+                    <button class="styled-button" onclick="showPopup('codePopup2')">Afficher le code</button>
+                </div>
+                <div class="sectionImages">
+                    <img class="image" src="images/calc.png">
+                </div>
+            </section>
+            <div class="popup" id="codePopup2">
+                <pre><code class="language-python">
+    # Python example
+    for i in range(5):
+        print("Hello, world!", i)
+                </code></pre>
+                <button class="close" onclick="closePopup('codePopup2')">Fermer</button>
+            </div>
     </div>
 
     <script>
