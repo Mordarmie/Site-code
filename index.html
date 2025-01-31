@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            hljs.highlightAll();
+        });
+    </script>
+</head>
+<body>
+    <Header>
+        <h1>Code</h1><!-- le titre du site -->
+    </Header>
+
+    <div class="mainDiv">
+        <!--           A dupliquer pour ajouter une nouvelle section et modifier codePopup1 -> codePopup2           -->
+        <section class="codeSection">
+            <div class="sectionText">
+                <p class="UpTitle">Python</p>
+                <h2 class="titleSection">Calculatrice</h2>
+                <h4 class="subTitleSection">C'est génial</h4>
+                <p class="descriptionSection">description ta grand mère la pute</p>
+                <button class="styled-button" onclick="showPopup('codePopup1')">Afficher le code</button>
+            </div>
+            <div class="sectionImages">
+                <img class="image" src="images/calc.png">
+            </div>
+        </section>
+        <div class="popup" id="codePopup1">
+            <pre><code class="language-python">
+# Python example
+for i in range(5):
+    print("Hello, world!", i)
+            </code></pre>
+            <button class="close" onclick="closePopup('codePopup1')">Fermer</button>
+        </div>
+
+
+    </div>
+
+    <script>
+        // Les deux fontion pour ouvrir et fermer la pop-up
+        function showPopup(popUpId) {
+            console.log("Show Code button clicked.");
+            const popup = document.getElementById(popUpId);
+            if (popup) {
+                console.log("Popup found. Displaying popup.");
+                popup.classList.add('active');
+            } else {
+                console.error("Popup element not found!");
+            }
+        }
+        function closePopup(popUpId) {
+            console.log("Close button clicked.");
+            const popup = document.getElementById(popUpId);
+            if (popup) {
+                console.log("Popup found. Hiding popup.");
+                popup.classList.remove('active');
+            } else {
+                console.error("Popup element not found!");
+            }
+        }
+    </script>
+</body>
+</html>

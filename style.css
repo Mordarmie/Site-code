@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+
+    --colorButton: #0060c7;
+    --colorButtonHover: #00438a;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: start;
+}
+
+.popup pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: scroll;
+}
+
+.popup.active {
+    display: block;
+}
+
+.close {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: var(--colorButton);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close:hover {
+    background: var(--colorButtonHover);
+}
+
+
+.styled-button {
+    padding: 10px 20px;
+    background-color: var(--colorButton);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.styled-button:hover {
+    background: var(--colorButton);
+}
+
+.mainDiv {
+    padding-top: 100px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+}
+
+.codeSection {
+    background-color: rgb(255, 255, 255);
+    max-width: 700px;
+    display: inline-flex;
+    justify-content: space-between;
+
+    border-radius: 20px;
+    border: 3px solid rgb(228, 228, 228);
+
+
+}
+
+.sectionText {
+    text-align: left;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+
+.UpTitle {
+    align-self: flex-start;
+    margin-bottom: 3px;
+}
+
+.titleSection {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.subTitleSection { 
+    margin-bottom: 0px;
+}
+
+.descriptionSection {
+    margin-top: 0px;
+}
+
+.sectionImages {
+    max-height: 500px;
+    width: fit-content;
+    display: flex;
+    align-items: center;    
+    text-align: center;
+    background-color: rgb(228, 228, 228);
+    border-radius: 5px;
+}
+
+.image {
+    height: 80%;
+    padding: 20px 50px;
+    display: block;
+    
+}
