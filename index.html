@@ -35,25 +35,25 @@
             <pre><code class="language-python">
             import random
 
-            def jouer():
-                jeu = ["pierre", "papier", "ciseaux"]
-                print("Jouons à un jeu !")
+def jouer():
+    jeu = ["pierre", "papier", "ciseaux"]
+    print("Jouons à un jeu !")
                                 
-                while True:
-                    utilisateur = input("Faites votre choix (pierre, papier, ciseaux)").lower()
-                    machine = random.choice(jeu)
-                    print("L'adversaire joue : {machine}")
+    while True:
+        utilisateur = input("Faites votre choix (pierre, papier, ciseaux)").lower()
+        machine = random.choice(jeu)
+        print("L'adversaire joue : {machine}")
                                     
-                    if utilisateur == machine:
-                        print("Match nul !")
-                    elif (utilisateur == "pierre" and machine == "ciseaux") or \
-                         (utilisateur == "papier" and machine == "pierre") or \
-                         (utilisateur == "ciseaux" and machine == "papier"):
-                        print("Victoire")
-                    else:
-                        print("Défaite")
+        if utilisateur == machine:
+            print("Match nul !")
+        elif (utilisateur == "pierre" and machine == "ciseaux") or \
+             (utilisateur == "papier" and machine == "pierre") or \
+             (utilisateur == "ciseaux" and machine == "papier"):
+            print("Victoire")
+        else:
+            print("Défaite")
                                     
-            jouer()
+jouer()
                 
             </code></pre>
             <button class="close" onclick="closePopup('codePopup1')">Fermer</button>
