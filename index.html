@@ -25,7 +25,7 @@
                 <p class="UpTitle">Python</p>
                 <h2 class="titleSection">Jeu Python vs IA</h2>
                 <h4 class="subTitleSection">Programmation du Jeu Pierre,Papier,Ciseaux contre IA sur Python </h4>
-                <a href="https://www.online-python.com/Qn8vSMJ1z7"> Executez le code ! </a>
+                <a href="https://www.online-python.com/ix23Lqz4SW"> Executez le code ! </a>
                 <button class="styled-button" onclick="showPopup('codePopup1')">Afficher le code</button>
             </div>
             <div class="sectionImages">
@@ -37,12 +37,12 @@
 import random
 def jouer():
     jeu = ["pierre", "papier", "ciseaux"]
-    print("Jouons à un jeu !")
+    print("L'adversaire joue :", machine)
                                 
     while True:
         utilisateur = input("Faites votre choix (pierre, papier, ciseaux)").lower()
         machine = random.choice(jeu)
-        print("L'adversaire joue : {machine}")
+        print("L'adversaire joue :", machine)
                                     
         if utilisateur == machine:
             print("Match nul !")
